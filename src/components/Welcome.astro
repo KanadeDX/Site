@@ -13,7 +13,7 @@ import nightcordLogo from '../assets/nightcord.svg';
 		</a>
 		
 		<div class="cards">
-			<a class="card" href="https://discord.gg/DR5zBEb47a">Join Discord</a>
+			<a class="card" href="https://discord.gg/uR2cHUYN">Join Discord</a>
 			<a class="card" href="https://t.me/KanadeDX">Follow Telegram</a>
 		</div>
 	</div>
@@ -51,8 +51,12 @@ import nightcordLogo from '../assets/nightcord.svg';
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
-		min-width: 500px;
+		width: 500px;
 		max-width: 700px;
+
+		@media screen and (max-width: 540px) {
+			width: 90%;
+		}
 
 		h1, h2, h3 {
 			margin: 0;
@@ -77,6 +81,16 @@ import nightcordLogo from '../assets/nightcord.svg';
 			a {
 				text-align: center;
 			}
+		}
+	}
+
+	@media screen and (max-width: 420px) {
+		.cards {
+			flex-direction: column;
+		}
+
+		.nightcord {
+			width: 90% !important;
 		}
 	}
 
