@@ -1,0 +1,68 @@
+---
+import nightcordLogo from '../assets/nightcord.svg';
+---
+
+<div id="container">
+	<img class="nightcord" src={nightcordLogo.src} alt="Nightcord Logo" />
+	
+	<div class="projects">
+		<!-- <h1>Projects</h1> -->
+		<a class="project" href="https://www.notion.so/kanadedx/KanadeDX-Usage-Guide-19fbe714e3f680dba696c18617c63e23">
+			<h2>KanadeDX</h2>
+			<span>An Android/iOS port of maimaiDX arcade</span>
+		</a>
+	</div>
+</div>
+
+<style lang="less">
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+	a {
+		text-decoration: none;
+		color: #c6c6f2;
+	}
+
+	#container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+
+		background-color: rgb(54, 46, 60);
+		color: #c6c6f2;
+
+		gap: 20px;
+
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.projects {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+
+		h1, h2, h3 {
+			margin: 0;
+		}
+
+		.project {
+			background: rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			padding: 20px;
+			min-width: 500px;
+
+			span {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.nightcord {
+		width: 300px;
+
+		// #c6c6f2
+		filter: invert(94%) sepia(68%) saturate(4836%) hue-rotate(178deg) brightness(94%) contrast(102%) drop-shadow(0 0 0.75rem rgba(152, 157, 255, 0.2));
+	}
+</style>
