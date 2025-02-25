@@ -11,11 +11,20 @@ import nightcordLogo from '../assets/nightcord.svg';
 			<h2>KanadeDX</h2>
 			<span>An Android/iOS port of maimaiDX arcade.</span>
 		</a>
+		
+		<div class="cards">
+			<a class="card" href="https://discord.gg/DR5zBEb47a">Join Discord</a>
+			<a class="card" href="https://t.me/KanadeDX">Follow Telegram</a>
+		</div>
 	</div>
 </div>
 
 <style lang="less">
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+	* {
+		box-sizing: border-box;
+	}
 
 	a {
 		text-decoration: none;
@@ -32,7 +41,7 @@ import nightcordLogo from '../assets/nightcord.svg';
 		background-color: rgb(54, 46, 60);
 		color: #c6c6f2;
 
-		gap: 20px;
+		gap: 40px;
 
 		font-family: 'Montserrat', sans-serif;
 	}
@@ -41,20 +50,32 @@ import nightcordLogo from '../assets/nightcord.svg';
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 50px;
+		gap: 20px;
+		min-width: 500px;
+		max-width: 700px;
 
 		h1, h2, h3 {
 			margin: 0;
 		}
 
-		.project {
+		.project, .card {
 			background: rgba(0, 0, 0, 0.2);
 			border-radius: 10px;
 			padding: 20px;
-			min-width: 500px;
+			width: 100%;
 
 			span {
 				opacity: 0.8;
+			}
+		}
+
+		.cards {
+			display: flex;
+			width: 100%;
+			gap: 20px;
+
+			a {
+				text-align: center;
 			}
 		}
 	}
